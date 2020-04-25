@@ -1,0 +1,27 @@
+{
+	"addition": {
+		"title": "Addition",
+		"task": "Solve the math problems"
+	},
+
+	"multiplication": {
+		"title": "Multiplication",
+		"task": "Solve the math problems"
+	},
+	"substruction": {
+		"title": "Substruction",
+		"task": "Solve the math problems"
+	},
+	"division": {
+		"title": "Division",
+		"task": "Solve the math problems"
+	},
+	"exponents": {
+		"title": "Exponents",
+		"task": "Solve the math problems key: ** is an exponent"
+	},
+	"cube": {
+		"title": "Cube",
+		"task": "Solve the math problems key: ** is an exponent"
+	}
+}

@@ -1,0 +1,11 @@
+{%extends "base.html"%}
+{%block content%}
+<h2>{{user.username}}</h2>
+
+<ul>
+  <li>total score: {{progress.total_score}}</li>
+  <li>maths score: {{progress.maths_score}}</li>
+  <li>science score: {{progress.science_score}}</li>
+  <li>english score: {{progress.english_score}}</li>
+</ul>
+{%endblock%}

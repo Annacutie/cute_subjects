@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@font-face{
+  font-family:'Gill Sans';
+  src: url('gillsans-копия.ttf') format('truetype');
+}
+:root{
+  --bg_color: #Eb6E80;
+  --form-bg: #e9b000;
+  --h_bg: #008f95;
+  --h1_with:100%;
+  --font:'Gill Sans';
+  --nav-ul:60vw;
+
+}
+/* center content in ckeck file  */
+/* ADD 5 more varabels */
+*{
+  padding: 0px;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: var(--font), serif;
+}
+h1, h2{
+  background-color:var(--h_bg);
+  color:#bd0202;
+  font-size: 200%;
+  font-family: 'Lato', serif;
+  padding: 5vh;
+  text-align: center;
+}
+h3{
+  background-color: var(--form-bg);
+}
+h1{
+  width:var(--h1_with);
+  background-color: transparent;
+}
+h4{
+  background-color: #Eb6E80;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%23ff4400' fill-opacity='0.4' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");
+color:navy;
+}
+body{
+  position:relative;
+  font-size:1rem;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  flex-flow: column;
+  text-rendering: optimizeLegibility;
+font-kerning: normal;
+letter-spacing: normal;
+overflow-wrap:break-word ;
+word-wrap:break-word;
+hyphens: auto;
+  background-color:var(--bg_color);
+background-image:image(cute_background.png);
+}
+h1 .big_letter::first-letter{color:#49274a;
+                                  display:block;
+                                     font-size:4rem;
+                                 background-color: #fff;
+                                 padding:0.5rem 1rem;
+                                 margin-right:0.5rem;
+                                 border:dashed 4px #f4decb;
+                                line-height:3.5rem;
+                                margin-bottom:0.5rem;
+                                float:left;
+
+                                  }
+form{
+  background-color:var(--form-bg);
+  border: solid 30px var(--form-bg);
+}
+input[type=number]{
+  background-color:#E24E42;
+  color:#000000;
+}
+a{
+  background-color: var(--h_bg);
+  color:#ffffff;
+}
+.big_letter{
+  margin-left:1rem;
+}
+ul{
+  /*margin-left: 50px;*/
+  margin-bottom: 3vh;
+  background-color:var(--bg_color);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fe0179' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+#test_header{
+  text-align: center;
+  width: 100vw;
+  margin-bottom: 3vh;
+  background-image: linear-gradient(rgba(0, 143, 149, 1), transparent);
+}
+#main_content{
+  display: flex;
+  flex-flow: column;
+  width: var(--nav-ul);
+  justify-content:center;
+  align-items: center;
+  background-color: #008f95;
+  border: solid 5px  #00ffd9;
+  box-shadow: 10px gray;
+  border:solid 5px #E24E45;
+  z-index:10000;
+
+}
+.bow{
+  display:block;
+  position:absolute;
+  top:60vh;
+  left:3vw;
+  height:30%;
+  width:20%;
+  z-index:3;
+}
+label{
+  display:inline-block;
+}
+
+  form ol li section input[type=radio]:checked+label{
+
+border: solid 4px #ee0000;
+background-color:#fff;
+}
+
+form ol li section input[type=radio]{
+  display:none;
+}
+
+.bow:hover{transform:rotate(-67deg);}
+.red-bow{
+  display:block;
+  position:absolute ;
+  top:60vh;
+  right:6vw;
+  height:25%;
+  width:15%;
+  z-index:3;
+}
+.contens_section li{
+display: block;
+margin-bottom: 1rem;
+padding: 0.5rem;
+}
+.contens_section{
+  width: 100%;
+  padding-left: 10%;
+}
+.strieght{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  margin-top:1rem;
+}
+form ol li:nth-child(odd){
+  background-color:#008f95;
+}
+form ol li:nth-child(even){
+  background-color:#eb6e80;
+}
+#main_content ol li{
+  margin-top: 1rem;
+}
+p{
+  font-family: var(--font), serif;
+  color:#fff;
+  font-weight:bold;
+  font-size:150%;
+}
+form ol {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap: 1rem;
+
+
+}
+ol li{
+  list-style-position: inside;
+  padding: 2vmax;
+  border:solid 4px #E24E42;
+  border-radius: 10px;
+}
+ol li:hover{
+  box-shadow: 1px 2px 3px gray;
+
+}
+#final_return{
+    display: flex;
+    align-items: center;
+    border: solid 5px #4287f5;
+}
+#score{
+  border: solid 10px #ff3d71;
+}
+
+#test_header h4{
+  display:inline-block;
+  padding:1.5vmax;
+  border-radius:50%;
+  margin:2vw;
+  box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size:120%;
+  color:#fff;
+  text-shadow: 2px 2px 2px #CE5937;
+}
+
+#Timetable{
+  /*display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;*/
+}
+form input[type="submit"] {
+
+  padding:0.5rem 1rem;
+  border-radius: 5px;
+  color:#ffffff;
+  background-color:var(--bg_color);
+  display: block;
+  size:200%;
+  margin-top:1rem;
+  border: solid 3px #E24E45;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+form input[type="submit"]:hover{
+  background-color:var(--h_bg);
+}
+.User_policy input[type="text"]{
+  background-color: #008f95;
+  width:25%;
+  display: block;
+  margin-bottom: 15%;
+}
+.User_policy input[type="password"]{
+  background-color:var(--bg_color);
+  width:25%;
+  margin-bottom:5%;
+  display: block;
+}
+.physics_form input{
+  display: block;
+}
+.quiz_heading{
+  text-align: center;
+  width: 100%;
+}
+ul li{
+  color:#fff;
+  size:150%;
+  padding:0.5rem 1rem;
+  background-color: transparent;
+  size:200%;
+  width: 130%;
+}
+
+#main_nav{
+  display:flex;
+  flex-flow:column;
+  width: 30vw;
+  padding: 1rem 2rem;
+  position:absolute;
+  left:0;
+  top:12vw;
+  z-index:30;
+}
+
+#main_nav ul{
+  list-style: none;
+  display:block;
+  width: 15vw;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+#main_nav ul li{
+text-transform: capitalize;
+text-align:left;
+
+}
+div{
+  background-color:var(--form-bg);
+}
+#main_nav h3{
+  width:15vw;
+}
+.settings_heading{
+  background-color: #008f95;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23eb6e9a' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+#subjects_contence{
+  margin-bottom:6vh;
+}
+
+.settings_heading{background-color: inherit;}
+
+form #change_password{
+  display:flex;
+  flex-flow:column;
+  width:50vw;
+}

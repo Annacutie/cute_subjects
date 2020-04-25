@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{%block content%}
+<h1>Login</h1>
+<form class="User_policy" action="" method="post">
+  {{form.hidden_tag()}}
+  {{form.username.label}}
+  {{form.username(size=64)}}
+
+  {{form.password.label}}
+  {{form.password(size=64)}}
+  {{form.remember_me.label}}
+  {{form.remember_me()}}
+  {{form.submit()}}
+</form>
+<!--create password, remember me and submit(no lablel and no size) -->
+{%endblock%}

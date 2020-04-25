@@ -1,0 +1,11 @@
+{%extends "base.html"%}
+{%block content%}
+<article>
+<p id="score">
+  {{comment}} your score is {{result}} / 10.
+   <a id="final_return" href="{{url_for('index')}}">back -> </a>
+</p>
+<p>{{m}}</p>
+</article>
+
+{%endblock%}
