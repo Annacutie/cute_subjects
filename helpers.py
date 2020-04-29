@@ -14,7 +14,7 @@ def super_int(var):
         new_var=ord(var)
 
     return new_var
-
+'''
 def reward(score):
     video_id=load_json(randint(0, 3), "muvies.json")
     video_name=video_id["name"]
@@ -22,3 +22,4 @@ def reward(score):
         return [video_id, video_name]
     else:
         return ["If your score is more then 8/10 you will get a moivie", ]
+'''

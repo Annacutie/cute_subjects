@@ -33,7 +33,7 @@ def maths_addition():
     session["test_type"]="maths"
     return render_template("maths.html", info=info, maths_test=maths_test)
 
-@app.route("/maths/multiplication/")
+@app.route("/maths/multiplication/", methods=["GET", "POST"])
 def maths_multiplication():
     info=load_json("multiplication", "Maths.json")
     maths_test={}
@@ -44,7 +44,7 @@ def maths_multiplication():
     session["test_type"]="maths"
     return render_template("maths.html", info=info, maths_test=maths_test)
 
-@app.route("/maths/division/")
+@app.route("/maths/division/", methods=["GET", "POST"])
 def maths_division():
     info=load_json("division", "Maths.json")
     maths_test={}
@@ -55,7 +55,7 @@ def maths_division():
     session["test_type"]="maths"
     return render_template("maths.html", info=info, maths_test=maths_test)
 
-@app.route("/maths/exponents/")
+@app.route("/maths/exponents/", methods=["GET", "POST"])
 def maths_exponents():
     info=load_json("exponents", "Maths.json")
     maths_test={}
@@ -66,7 +66,7 @@ def maths_exponents():
     session["test_type"]="maths"
     return render_template("maths.html", info=info, maths_test=maths_test)
 #two routes(substruction and cube) make
-@app.route("/maths/cube/")
+@app.route("/maths/cube/", methods=["GET", "POST"])
 def maths_cube():
     info=load_json("cube", "Maths.json")
     maths_test={}
@@ -77,7 +77,7 @@ def maths_cube():
     session["test_type"]="maths"
     return render_template("maths.html", info=info, maths_test=maths_test)
 
-@app.route("/maths/substruction/")
+@app.route("/maths/substruction/", methods=["GET", "POST"])
 def maths_substruction():
     info=load_json("substruction", "Maths.json")
     maths_test={}
@@ -148,14 +148,14 @@ def result():
             db.session.commit()
     else:
         m="You need to login in order to save your score"
-    reward_statmet=reward(score)
+    #reward_statmet=reward(score)
     print(f'This is correct answers {session["correct_answers"]}')
     #session.pop("correct_answers", None)
     comment=comments(score)
     #score=check(session["correct_answers2"], answer_list)
     pestege=pesentege(score, 10)
     #session.pop("correct_answers2")
-    return render_template("check.html", result=score, comment=comment, pestege=pestege, reward_statmet=reward_statmet, m=m)
+    return render_template("check.html", result=score, comment=comment, pestege=pestege, m=m)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():

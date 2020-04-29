@@ -4,7 +4,7 @@
 <h1 class="quiz_heading">{{info.title}}</h1>
 <main id='main_content'>
 <p>{{info.task}}</p>
-<form class="" action='{{url_for("result")}}' method="post">
+<form class="" action='{{url_for("result")}}' method="POST">
 
 <ol>
   {%for q in range (maths_test.questions | length)%}
