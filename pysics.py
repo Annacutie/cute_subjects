@@ -8,6 +8,6 @@ def gen_phisics_test():
     for i in range(10):
         s=randint(2, 12)
         t=randint(2, 12)
-        b.append((f"время: {s} min скоросьть: {t} cm/sec", speed_and_time(s, t)))
+        b.append((f"time: {s} min speed: {t} cm/sec", speed_and_time(s, t)))
 
     return b
