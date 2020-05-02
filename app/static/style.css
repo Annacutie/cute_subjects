@@ -229,6 +229,7 @@ form input[type="submit"] {
   border: solid 3px #E24E45;
   text-transform: uppercase;
   font-weight: bold;
+  margin:auto;
 
 }
 form input[type="submit"]:hover{

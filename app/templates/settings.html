@@ -3,32 +3,32 @@
 <h2>Settings</h2>
   <h3 class="settings_heading">Delete account</h3>
   <form action="" method="POST">
-      PASSWORD: <input type="password" name="password">
-      <input type="submit" name="delete_submit" value="Delete">
+      <label for="password">PASSWORD:</label> <input type="password" name="password"><br>
+      <input type="submit" name="delete_submit" value="Delete"><br>
     </form>
     <form action="" method="POST">
-      OLD PASSWORD: <input type="password" name="old_password">
-      NEW PASSWORD: <input type="password" name="new_password">
+      <label for="old_password">OLD PASSWORD:</label><br><input type="password" name="old_password"><br>
+      <label for="new_password">NEW PASSWORD:</label><br><input type="password" name="new_password"><br>
       <input type="submit" name="change_submit" value="Change">
     </form>
     <p>{{message}}</p>
 
 <form action="" name="secret_question" method="POST">
-  <label for="secret_1">Slelect a question</label>
+  <label for="secret_1">Slelect a question</label><br>
   <select id="secret_1" name="secret_question_1">
   <option value="What is your favorite food?">What is your favorite food?</option>
   <option value="What is your favorite book?">What is your favorite book?</option>
   <option value="What is your favorite subject in school?">What is your favorite subject in school?</option>
 </select>
-<label for="q1"></label>
+<label for="q1"></label><br>
 <input type="text" name="answer_1" id='q1'>
-<label for="secret_2">Your answer</label>
+<label for="secret_2">Your answer</label><br>
 <select id="secret_2" name="secret_question_2">
 <option value="What is your favorite color?">What is your favorite color?</option>
 <option value="Your mum's name?">What is your mum's name?</option>
 <option value="Your birth date.">Your birth date.</option>
 </select>
-<label for="q2">Your answer</label>
+<label for="q2">Your answer</label><br>
 <input type="text" name="answer_2" id='q2'>
 <input type="Submit" name="secret_submit">
 </form>
