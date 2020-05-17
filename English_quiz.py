@@ -48,7 +48,7 @@ class Quiz(object):
     def gen_quiz(self):
         quiz=[]
 
-        for value in range(10):
+        for value in range(12):
             current_index=randint(0, 5999)
             question=self.gen_question(current_index)
             options=self.gen_options(current_index)

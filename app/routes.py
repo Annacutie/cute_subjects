@@ -26,7 +26,7 @@ def index():
 def maths_addition():
     info=load_json("addition", "Maths.json")
     maths_test={}
-    maths_test["questions"]=gen_questions(10, "+")
+    maths_test["questions"]=gen_questions(12, "+")
     maths_test["correct_answers"]=gen_answers(maths_test["questions"])
     session["correct_answers"]=maths_test["correct_answers"]
     maths_test["score"]=0
@@ -37,7 +37,7 @@ def maths_addition():
 def maths_multiplication():
     info=load_json("multiplication", "Maths.json")
     maths_test={}
-    maths_test["questions"]=gen_questions(10, "*")
+    maths_test["questions"]=gen_questions(12, "*")
     maths_test["correct_answers"]=gen_answers(maths_test["questions"])
     session["correct_answers"]=maths_test["correct_answers"]
     maths_test["score"]=0
@@ -48,7 +48,7 @@ def maths_multiplication():
 def maths_division():
     info=load_json("division", "Maths.json")
     maths_test={}
-    maths_test["questions"]=gen_questions(10, "/")
+    maths_test["questions"]=gen_questions(12, "/")
     maths_test["correct_answers"]=gen_answers(maths_test["questions"])
     session["correct_answers"]=maths_test["correct_answers"]
     maths_test["score"]=0
@@ -59,7 +59,7 @@ def maths_division():
 def maths_exponents():
     info=load_json("exponents", "Maths.json")
     maths_test={}
-    maths_test["questions"]=gen_questions(10, "**2")
+    maths_test["questions"]=gen_questions(12, "**2")
     maths_test["correct_answers"]=gen_answers(maths_test["questions"])
     session["correct_answers"]=maths_test["correct_answers"]
     maths_test["score"]=0
@@ -70,7 +70,7 @@ def maths_exponents():
 def maths_cube():
     info=load_json("cube", "Maths.json")
     maths_test={}
-    maths_test["questions"]=gen_questions(10, "**3")
+    maths_test["questions"]=gen_questions(12, "**3")
     maths_test["correct_answers"]=gen_answers(maths_test["questions"])
     session["correct_answers"]=maths_test["correct_answers"]
     maths_test["score"]=0
@@ -81,7 +81,7 @@ def maths_cube():
 def maths_substruction():
     info=load_json("substruction", "Maths.json")
     maths_test={}
-    maths_test["questions"]=gen_questions(10, "-")
+    maths_test["questions"]=gen_questions(12, "-")
     maths_test["correct_answers"]=gen_answers(maths_test["questions"])
     session["correct_answers"]=maths_test["correct_answers"]
     maths_test["score"]=0
