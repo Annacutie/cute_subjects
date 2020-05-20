@@ -1,5 +1,5 @@
 from app import app, db
-from flask import render_template, request, session, url_for, redirect
+from flask import render_template, request, session, url_for, redirect, send_from_directory
 from russion_course_maths import gen_questions
 from russion_course_maths import gen_answers, check, pesentege
 from random import randint
@@ -283,3 +283,7 @@ def get_reset():
 
     return render_template("user_name.html")
     #return redirect(url_for("reset_password", username=username))
+@app.route("/robats.txt")
+@app.route("/sitemap.xml")
+def static_from_route():
+    return send_from_directory(app.static_folder, request.path[1:], )

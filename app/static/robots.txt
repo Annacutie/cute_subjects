@@ -1,0 +1,3 @@
+Sitemap: www.cute-subjects.com/sitemap.xml
+User-ajent:*
+Disallow:
