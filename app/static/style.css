@@ -124,11 +124,23 @@ ul{
 label{
   display:inline-block;
 }
+@media (max-width:767px){
+  h1{
+    font-size:calc(1rem*3);
+  }
 
-  form ol li section input[type=radio]:checked+label{
-
-border: solid 4px #ee0000;
-background-color:#fff;
+  body{
+    background-color:yellow;
+    font-size:1rem;
+  }
+}
+@media (min-width:768px){
+#main_content{
+  width:120%;
+}
+form{
+  width:90%;
+}
 }
 
 form ol li section input[type=radio]{

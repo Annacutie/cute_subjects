@@ -12,6 +12,7 @@ from app.models import User, Progress, ResetPassword
 from flask_login  import logout_user, login_required
 from English_quiz import *
 from sqlite3 import *
+from Double_opiration_maths import *
 
 operations=["+", "-", "*", "/", "**2", "**3"]
 @app.route("/")
@@ -87,6 +88,18 @@ def maths_substruction():
     maths_test["score"]=0
     session["test_type"]="maths"
     return render_template("maths.html", info=info, maths_test=maths_test)
+
+@app.route("/maths/double_opiration/", methods=["GET", "POST"])
+def maths_double_opiration():
+    info=load_json("substruction", "Maths.json")
+    maths_test={}
+    maths_test["questions"]=gen_doble_questions(12, "-", "+")
+
+    maths_test["correct_answers"]=gen_answers(maths_test["questions"])
+    session["correct_answers"]=maths_test["correct_answers"]
+    maths_test["score"]=0
+    session["test_type"]="maths"
+    return render_template("maths.html", maths_test=maths_test)
 
 @app.route("/physics",  methods=["POST", "GET"])
 def physics_problem():
