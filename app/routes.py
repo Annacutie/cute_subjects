@@ -12,7 +12,7 @@ from app.models import User, Progress, ResetPassword
 from flask_login  import logout_user, login_required
 from English_quiz import *
 from sqlite3 import *
-from Double_opiration_maths import *
+
 
 operations=["+", "-", "*", "/", "**2", "**3"]
 @app.route("/")
@@ -285,5 +285,5 @@ def get_reset():
     #return redirect(url_for("reset_password", username=username))
 @app.route("/robots.txt")
 @app.route("/sitemap.xml")
-def static_from_route():
-    return send_from_directory(app.static_folder, request.path[1:], )
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
