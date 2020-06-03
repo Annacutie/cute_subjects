@@ -1,0 +1,12 @@
+body {
+  background-color: pink;
+}
+h1 span {
+  color: #fff;
+}
+h1 {
+  text-transform: uppercase;
+}
+h1 span {
+  background-color: yellow;
+}
