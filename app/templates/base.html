@@ -34,7 +34,7 @@
       <!--<h3>User policy</h3>-->
 
     {%if current_user.is_anonymous%}<li><a href="{{url_for('login')}}">login</a></li>
-    <li><a href="{{url_for('register')}}">register</a>
+    <li><a href="{{url_for('register')}}">register</a></li>
     {%else:%}
     <li><a href="{{url_for('logout')}}">logout</a></li>
     <li><a href="{{url_for('profile', username=current_user.username)}}">profile</a></li>
