@@ -123,3 +123,23 @@ h1 {
   width: 80%;
   text-align: center;
 }
+label input:checked + .menu + ul {
+  opacity: 1;
+}
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+}
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #f38630;
+  text-decoration: none;
+}
