@@ -12,34 +12,36 @@
   <label>
       <input type="checkbox">
       <span class="menu"> <span class="hamburger"></span> </span>
-      <h3>Maths</h3>
-
       <ul>
+    <!--<h3>Maths</h3>-->
+
+
         <li><a href="{{url_for('maths_addition')}}">addition</a></li>
         <li><a href="{{url_for('maths_multiplication')}}">multiplication</a></li>
         <li><a href="{{url_for('maths_substruction')}}">Substruction</a></li>
         <li><a href="{{url_for('maths_division')}}">Division</a></li>
         <li><a href="{{url_for('maths_exponents')}}">exponents</a></li>
         <li><a href="{{url_for('maths_cube')}}">cube</a></li>
-      </ul>
-      <h3>English</h3>
-      <ul>
+
+      <!--<h3>English</h3>-->
+
       <li><a href="{{url_for('define_words_tests')}}">Define words</a></li>
-      </ul>
-      <h3>Physics</h3>
-      <ul>
+
+    <!--  <h3>Physics</h3>-->
+
       <li><a href="{{url_for('physics_problem')}}">Speed and time</a></li>
       </ul>
-      <h3>User policy</h3>
+      <!--<h3>User policy</h3>-->
 
-      <ul>  {%if current_user.is_anonymous%}<li><a href="{{url_for('login')}}">login</a></li>
+    {%if current_user.is_anonymous%}<li><a href="{{url_for('login')}}">login</a></li>
     <li><a href="{{url_for('register')}}">register</a>
     {%else:%}
     <li><a href="{{url_for('logout')}}">logout</a></li>
     <li><a href="{{url_for('profile', username=current_user.username)}}">profile</a></li>
     <li><a href="{{url_for('settings')}}">settings</a></li>
     {%endif%}
-      </ul>
+
+    </ul>
       </label>
   <header id="test_header"><h4>Cute Subjects</h4>
 
