@@ -73,7 +73,7 @@ label .hamburger:before {
 label .hamburger:after {
   bottom: -10px;
 }
-label input {
+label input[type='checkbox'] {
   display: none;
 }
 label input:checked + .menu {
