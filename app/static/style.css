@@ -125,6 +125,12 @@ label{
   display:inline-block;
 }
 @media (max-width:767px){
+#main_content{
+  width:90%;
+}
+form{
+  width:80%;
+}
   h1{
     font-size:calc(1rem*3);
   }
@@ -136,10 +142,10 @@ label{
 }
 @media (min-width:768px){
 #main_content{
-  width:100%;
+  width:80%;
 }
 form{
-  width:90%;
+  width:70%;
 }
 }
 
