@@ -60,6 +60,7 @@ word-wrap:break-word;
 hyphens: auto;
   background-color:var(--bg_color);
 background-image:image(cute_background.png);
+overflow-x: hidden;
 }
 h1 .big_letter::first-letter{color:#49274a;
                                   display:block;
@@ -131,6 +132,7 @@ label{
 form{
   width:80%;
 }
+form ol{grid-template-columns:1fr 1fr; }
   h1{
     font-size:calc(1rem*3);
   }
