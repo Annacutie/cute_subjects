@@ -148,8 +148,12 @@ form ol{grid-template-columns:1fr 1fr; }
 }
 form{
   width:70%;
+
+}
+form ol {grid-template-columns:1fr 1fr 1fr;
 }
 }
+
 
 form ol li section input[type=radio]{
   display:none;
@@ -197,7 +201,7 @@ p{
 }
 form ol {
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  /*grid-template-columns:1fr 1fr 1fr;*/
   grid-gap: 1rem;
 
 
@@ -238,7 +242,7 @@ ol li:hover{
   align-items: flex-end;*/
 }
 form input[type="submit"] {
-
+margin-top: 1.5rem;
   padding:0.5rem 1rem;
   border-radius: 5px;
   color:#ffffff;
