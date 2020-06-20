@@ -33,6 +33,7 @@ h1, h2{
 h3{
   background-color: var(--form-bg);
 }
+
 h1{
   width:var(--h1_with);
   background-color: transparent;
@@ -75,7 +76,7 @@ h1 .big_letter::first-letter{color:#49274a;
 form{
   background-color:var(--form-bg);
   border: solid 30px var(--form-bg);
-
+  width:80%;
 }
 input[type=number]{
   background-color:#E24E42;
