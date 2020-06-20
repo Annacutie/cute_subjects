@@ -104,7 +104,7 @@ label ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  opacity: 0;
+display: none;
   -webkit-transition: 0.25s 0s ease-in-out;
   transition: 0.25s 0s ease-in-out;
 }
@@ -118,7 +118,7 @@ h1 {
   text-align: center;
 }
 label input:checked + .menu + ul {
-  opacity: 1;
+  display: block;
 }
 label ul {
   z-index: 200;

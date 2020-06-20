@@ -242,18 +242,18 @@ ol li:hover{
   align-items: flex-end;*/
 }
 form input[type="submit"] {
-margin-top: 1.5rem;
+
   padding:0.5rem 1rem;
   border-radius: 5px;
   color:#ffffff;
   background-color:var(--bg_color);
   display: block;
   size:200%;
-  margin-top:1rem;
   border: solid 3px #E24E45;
   text-transform: uppercase;
   font-weight: bold;
   margin:auto;
+  margin-top: 1.5rem;
 
 }
 form input[type="submit"]:hover{
@@ -277,6 +277,8 @@ form input[type="submit"]:hover{
 .quiz_heading{
   text-align: center;
   width: 100%;
+  padding: 0;
+  margin-bottom: 3vh; 
 }
 ul li{
   color:#fff;
