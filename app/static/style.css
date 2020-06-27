@@ -105,8 +105,10 @@ ul {
 #main_content{
   display: flex;
   flex-flow: column;
-  width: var(--nav-ul);
-  justify-content:center;
+
+  /*justify-content:center;*/
+  min-height:100%;
+  
   align-items: center;
   background-color: #008f95;
   border: solid 5px  #00ffd9;
@@ -278,7 +280,7 @@ form input[type="submit"]:hover{
   text-align: center;
   width: 100%;
   padding: 0;
-  margin-bottom: 3vh; 
+  margin-bottom: 3vh;
 }
 ul li{
   color:#fff;

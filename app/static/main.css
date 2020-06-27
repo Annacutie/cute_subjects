@@ -123,14 +123,17 @@ label input:checked + .menu + ul {
 label ul {
   z-index: 200;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+  t-webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
   -webkit-transition: 0.25s 0s ease-in-out;
   transition: 0.25s 0s ease-in-out;
 }
+label ul li a{
+padding-top: 1vh;
+padding-bottom: 1vh;
+}
+
 label a {
   margin-bottom: 1em;
   display: block;
