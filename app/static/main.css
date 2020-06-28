@@ -132,6 +132,11 @@ label ul {
 label ul li a{
 padding-top: 1vh;
 padding-bottom: 1vh;
+padding-left: 10vw;
+padding-right: 10vw;
+text-align: center;
+font-weight: bold;
+text-transform: capitalize;
 }
 
 label a {
