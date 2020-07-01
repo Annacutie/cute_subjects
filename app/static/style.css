@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @font-face{
@@ -32,6 +34,7 @@ h1, h2{
 }
 h3{
   background-color: var(--form-bg);
+  font-weight: bold;
 }
 
 h1{
@@ -108,7 +111,7 @@ ul {
 
   /*justify-content:center;*/
   min-height:100%;
-  
+
   align-items: center;
   background-color: #008f95;
   border: solid 5px  #00ffd9;
