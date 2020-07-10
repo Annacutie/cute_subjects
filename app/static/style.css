@@ -84,6 +84,7 @@ form{
   background-color:var(--form-bg);
   border: solid 30px var(--form-bg);
   width:80%;
+  height: 90%;
 }
 input[type=number]{
   background-color:#E24E42;
@@ -92,6 +93,9 @@ input[type=number]{
 a{
   background-color: var(--h_bg);
   color:#ffffff;
+}
+footer{
+  margin-bottom: 1rem;
 }
 .big_letter{
   margin-left:1rem;
