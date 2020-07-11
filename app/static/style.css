@@ -277,6 +277,9 @@ form input[type="submit"]:hover{
   display: block;
   margin-bottom: 15%;
 }
+.User_policy{
+  height: 50%;
+}
 .User_policy input[type="password"]{
   background-color:var(--bg_color);
   width:25%;

@@ -259,9 +259,12 @@ def settings():
 @app.route("/reset_password", methods=["GET", "POST"])
 def reset_password():
     username = request.args.get('username')
-    u=User.query.filter_by(username=username).first()
-    check_q=ResetPassword.query.filter_by(user_id=u.id).all()
-    questions={"q1":check_q[0].question, "q2":check_q[1].question}
+    try:
+        u=User.query.filter_by(username=username).first()
+        check_q=ResetPassword.query.filter_by(user_id=u.id).all()
+        questions={"q1":check_q[0].question, "q2":check_q[1].question}
+    except:
+            return 'try agian username is not found.'
     if request.method=="POST":
         if 'secret_submit' in request.form.keys():
 
