@@ -264,7 +264,8 @@ def reset_password():
         check_q=ResetPassword.query.filter_by(user_id=u.id).all()
         questions={"q1":check_q[0].question, "q2":check_q[1].question}
     except:
-            return 'try agian username is not found.'
+        error_messege='Try agian username is not found.'
+        return render_template("Reset_password.html", error_messege=error_messege)
     if request.method=="POST":
         if 'secret_submit' in request.form.keys():
 
