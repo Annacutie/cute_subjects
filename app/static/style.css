@@ -50,11 +50,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 color:navy;
 }
 body{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   position:relative;
   font-size:1rem;
   line-height: 1.5;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items:center;
   flex-flow: column;
@@ -95,7 +98,7 @@ a{
   color:#ffffff;
 }
 footer{
-  margin-bottom: 14rem;
+
 }
 .big_letter{
   margin-left:1rem;
@@ -136,6 +139,7 @@ ul {
 }
 label{
   display:inline-block;
+  margin: 0 auto;
 }
 @media (max-width:767px){
 #main_content{
@@ -285,6 +289,7 @@ form input[type="submit"]:hover{
   width:25%;
   margin-bottom:5%;
   display: block;
+  margin: 0 auto;
 }
 .physics_form input{
   display: block;
