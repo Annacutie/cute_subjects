@@ -71,6 +71,9 @@ hyphens: auto;
 background-image:image(cute_background.png);
 overflow-x: hidden;
 }
+.form_group{
+  margin: 0 auto;
+}
 h1 .big_letter::first-letter{color:#49274a;
                                   display:block;
                                      font-size:4rem;
