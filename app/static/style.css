@@ -58,9 +58,9 @@ body{
   line-height: 1.5;
   width: 100vw;
   min-height: 100vh;
-  display: flex;
+
   align-items:center;
-  flex-flow: column;
+
   text-rendering: optimizeLegibility;
 font-kerning: normal;
 letter-spacing: normal;
