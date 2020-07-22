@@ -177,7 +177,9 @@ form ol {grid-template-columns:1fr 1fr 1fr;
 form ol li section input[type=radio]{
   display:none;
 }
-
+form ol li section label:hover{
+  background: #C8A2C8;
+}
 .bow:hover{transform:rotate(-67deg);}
 .red-bow{
   display:block;
@@ -280,7 +282,7 @@ form input[type="submit"]:hover{
 }
 .User_policy input[type="text"]{
   background-color: #008f95;
-  width:25%;
+  width:100%;
   display: block;
   margin-bottom: 15%;
 }
@@ -289,10 +291,10 @@ form input[type="submit"]:hover{
 }
 .User_policy input[type="password"]{
   background-color:var(--bg_color);
-  width:25%;
+  width:100%;
   margin-bottom:5%;
   display: block;
-  margin: 0 auto;
+
 }
 .physics_form input{
   display: block;
