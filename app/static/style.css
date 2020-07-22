@@ -190,6 +190,7 @@ form ol li section label:hover{
   width:15%;
   z-index:3;
 }
+form ol li section input[type=radio]:checked + label{background-color:yellow;}
 .contens_section li{
 display: block;
 margin-bottom: 1rem;
