@@ -145,6 +145,7 @@ label{
   margin: 0 auto;
   justify-content: left;
   width: 100%;
+  padding: 1rem 2rem;
 }
 @media (max-width:767px){
 #main_content{
@@ -180,7 +181,7 @@ form ol li section input[type=radio]{
   display:none;
 }
 form ol li section label:hover{
-  background: #C8A2C8;
+  background: #ba2eff;
 }
 .bow:hover{transform:rotate(-67deg);}
 .red-bow{
@@ -192,7 +193,7 @@ form ol li section label:hover{
   width:15%;
   z-index:3;
 }
-form ol li section input[type=radio]:checked + label{background-color:yellow;}
+form ol li section input[type=radio]:checked + label{background-color:#ff6db0;}
 .contens_section li{
 display: block;
 margin-bottom: 1rem;
