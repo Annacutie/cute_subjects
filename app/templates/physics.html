@@ -1,6 +1,6 @@
 {%extends "base.html"%}
 {%block content%}
-<header id="test_header"><h1>{{physics_test.title}}</h1></header>
+<h1>{{physics_test.title}}</h1>
 <main id='main_content'>
 <p>{{physics_test.task}}</p>
 <form class="physics_form" action='{{url_for("result")}}' method="post">

@@ -9,7 +9,7 @@
   <p>{{quiz[i]["question"]}}</p>
       {%for q in range(3)%}
 
-      ---<section class="strieght">
+      <section class="strieght">
 
       <input type="radio" name="q_{{i}}" value="{{quiz[i]['options'][q]}}" id="option_{{q}}_{{i}}">
 
@@ -17,7 +17,7 @@
 
       </section>
       {%endfor%}
-      ---</li>
+      </li>
   {%endfor%}
   </ol>
   <input type="submit" value="Mark it">
