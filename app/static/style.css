@@ -143,6 +143,7 @@ ul {
 label{
   display:inline-block;
   margin: 0 auto;
+  justify-content: left;
 }
 @media (max-width:767px){
 #main_content{
