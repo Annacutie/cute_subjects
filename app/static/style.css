@@ -172,7 +172,7 @@ form{
   width:70%;
 
 }
-form ol {grid-template-columns:1fr 1fr 1fr;
+form ol {grid-template-columns:1fr 1fr;
 }
 }
 
@@ -182,6 +182,9 @@ form ol li section input[type=radio]{
 }
 form ol li section label:hover{
   background: #ba2eff;
+}
+.menu{
+  overflow: hidden;
 }
 .bow:hover{transform:rotate(-67deg);}
 .red-bow{

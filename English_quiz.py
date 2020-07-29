@@ -24,7 +24,7 @@ class Quiz(object):
 
     def gen_question(self, rand_index):
         """makes a quetion."""
-        return f"Define: {self.test_data[rand_index]['word']}."
+        return f" {self.test_data[rand_index]['word']}."
 
     def gen_options(self, rand_index):
         options=[]
